@@ -125,3 +125,6 @@ for i in $(ls -A $HOME/.bashrc.d/); do source $HOME/.bashrc.d/$i; done
 if [ -f .devfactory.yml ]; then
     cp .devfactory.yml .gitpod.yml
 fi
+
+git config --global core.excludesFile '/home/gitpod/.gitexclude'
+
